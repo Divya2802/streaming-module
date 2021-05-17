@@ -9,7 +9,6 @@ class App extends React.Component {
     }
   }
   componentDidMount() {
-    console.log(this.state.numberOfStreams);
     var videoUrl = 'ws://localhost:9999/';
     this.state.streams.map(item => {
       var player = new JSMpeg.VideoElement(`#${item.id}`, videoUrl, { autoplay: true });
@@ -18,7 +17,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("Inside App----->", this.state.numberOfStreams)
     return (
       <div className="main__container">
         {this.state.streams.map(item => (
