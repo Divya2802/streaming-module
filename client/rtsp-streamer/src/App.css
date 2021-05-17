@@ -1,0 +1,14 @@
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: max-content;
+  padding: 10px;
+}
+.video-canvas {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  border: 5px solid #111;
+  margin: 10px 10px 10px 10px;
+}
